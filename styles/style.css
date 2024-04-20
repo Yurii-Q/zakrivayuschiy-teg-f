@@ -213,7 +213,8 @@
 
 .card__icon-button {
   cursor: pointer;
-  width: 38px;
+  inline-size: 38px;
+  block-size: 38px;
   border: 2px solid transparent;
   transition: border-color 0.3s ease;
   display: flex;
@@ -385,6 +386,10 @@
   padding-block: 12.5px;
   margin: 0;
   width: 100%;
+}
+
+.save-dialog__text {
+  text-transform: uppercase;
 }
 
 .button__text-uppercase {
