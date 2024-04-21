@@ -35,6 +35,7 @@
   font-size: 14px;
   line-height: 1;
   font-family: var(--accent-font), sans-serif;
+  text-transform: uppercase;
   text-align: center;
   border: 2px solid var(--accent-color);
   padding-block-start: clamp(120px, 6.3462rem + 4.9231vw, 136px);
@@ -50,16 +51,15 @@
   margin-block-end: 50px;
 }
 
-.header__title {
+.header__logo {
+  display: block;
   font-size: clamp(49px, 1.9087rem + 4.9231vw, 65px);
   margin-block-end: 20px;
-  text-transform: uppercase;
 }
 
-.header__text {
+.header__title {
   font-size: clamp(14px, 0.226rem + 2.7692vw, 23px);
   margin-block-end: 25px;
-  text-transform: uppercase;
 }
 
 .header__theme-menu {
@@ -76,6 +76,7 @@
 
 .theme-menu__button {
   position: relative;
+  text-transform: uppercase;
   transition: opacity 0.3s ease;
 }
 
@@ -235,6 +236,7 @@
   background-color: var(--bg-color);
   cursor: pointer;
   mix-blend-mode: normal;
+  transition: box-shadow 0.3s;
 }
 
 .button-style::after {
@@ -251,7 +253,6 @@
 
 .button-style:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color);
-  transition: box-shadow 0.3s;
 }
 
 .button-style:hover::after {
